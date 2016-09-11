@@ -21,6 +21,16 @@
     for the JavaScript code in this page.
 */
 
+// Game state object
+var Game = function() {};
+
+// Room object
+var Room = function() {};
+
+// Item object
+var Item = function() {};
+
+// Initializing the engine and the game state
 $(document).ready( function() {
 
 });
