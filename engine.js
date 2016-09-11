@@ -35,7 +35,10 @@ var Room = function(x, y, z, description) {
 };
 
 // Item object
-var Item = function() {};
+var Item = function(name) {
+    this.name = name;
+    this.on = {};   // List of actions on this item
+};
 
 // Initializing the engine and the game state
 $(document).ready( function() {
