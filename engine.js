@@ -25,7 +25,14 @@
 var Game = function() {};
 
 // Room object
-var Room = function() {};
+var Room = function(x, y, z, description) {
+    this.x = x;
+    this.y = y;
+    this.z = z;
+    this.description = description;
+    this.items = [];
+    this.exits = [];
+};
 
 // Item object
 var Item = function() {};
