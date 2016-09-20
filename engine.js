@@ -46,7 +46,7 @@ var Room = function(x, y, z, description) {
 	this.visited = false;	// Initialized as non-visited.
 	this.first_enter = function() {};
 	this.enter = function() {
-		if (this.visited)
+		if (!this.visited)
 			this.first_enter();
 	};
 };
