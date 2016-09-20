@@ -22,7 +22,11 @@
 */
 
 // Game state object
-var Game = function() {};
+var Game = function() {
+	this.rooms = [];
+	this.actions = [];
+	this.variables = [];
+};
 
 // Room object
 var Room = function(x, y, z, description) {
