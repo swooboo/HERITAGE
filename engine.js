@@ -28,6 +28,13 @@ var Game = function() {
 	this.variables = [];
 };
 
+// Player object
+var Player = function(name){
+	this.name = name;
+	this.items = [];
+	this.x = this.y = this.z = undefined;
+}
+
 // Room object
 var Room = function(x, y, z, description) {
 	this.x = x;
