@@ -36,6 +36,12 @@ var Room = function(x, y, z, description) {
 	this.description = description;
 	this.items = [];
 	this.exits = [];
+	this.visited = false;	// Initialized as non-visited.
+	this.first_enter = function() {};
+	this.enter = function() {
+		if (this.visited)
+			this.first_enter();
+	};
 };
 
 // Item object
