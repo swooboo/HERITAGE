@@ -27,6 +27,8 @@ class Game {
 		this.rooms = [];
 		this.actions = [];
 		this.variables = [];
+		this.info = {};
+		this.player = undefined;
 	}
 };
 
