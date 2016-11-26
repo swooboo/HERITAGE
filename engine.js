@@ -102,4 +102,3 @@ class Variable {
 $(document).ready( function() {
 
 });
-
