@@ -88,6 +88,14 @@ class Action {
 	}
 }
 
+// Variable class - some flags / data can be stored here. For example - 'player_visited_room_1' can store whether a player visited the room.
+class Variable {
+	constructor(name, value){
+		this.name = name;
+		this.value = value;
+	}
+}
+
 // Initializing the engine and the game state
 $(document).ready( function() {
 
