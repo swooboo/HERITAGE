@@ -30,7 +30,7 @@ class Game {
 		this.info = {};
 		this.player = undefined;
 	}
-};
+}
 
 // Player object
 class Player {
@@ -56,8 +56,8 @@ class Room {
 	enter() {
 		if (!this.visited)
 			this.first_enter();
-	};
-};
+	}
+}
 
 // Item object
 class Item {
@@ -65,7 +65,7 @@ class Item {
 		this.name = name;
 		this.on = {};   // List of actions on this item
 	}
-};
+}
 
 // Exit class - rooms can have custom exits, which are basically teleports.
 class Exit {
