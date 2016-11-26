@@ -65,6 +65,16 @@ class Item {
 	}
 };
 
+// Exit class - rooms can have custom exits, which are basically teleports.
+class Exit {
+	constructor(id){
+		this.id = id;
+		this.fail = "";
+		this.new_location = "";
+		this.equals = "";
+	}
+}
+
 // Initializing the engine and the game state
 $(document).ready( function() {
 
