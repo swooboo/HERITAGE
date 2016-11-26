@@ -75,6 +75,19 @@ class Exit {
 	}
 }
 
+// Action class - actual verbs that the player can do.
+class Action {
+	constructor(verb){
+		this.verb = verb;
+		this.synonyms = [];
+		this.succeed = "";
+		this.require_inventory = [];
+		this.require_here = [];
+		this.lose = [];
+		this.gain = [];
+	}
+}
+
 // Initializing the engine and the game state
 $(document).ready( function() {
 
