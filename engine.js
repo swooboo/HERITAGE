@@ -22,39 +22,47 @@
 */
 
 // Game state object
-var Game = function() {
-	this.rooms = [];
-	this.actions = [];
-	this.variables = [];
+class Game {
+	constructor(){
+		this.rooms = [];
+		this.actions = [];
+		this.variables = [];
+	}
 };
 
 // Player object
-var Player = function(name){
-	this.name = name;
-	this.items = [];
-	this.x = this.y = this.z = undefined;
+class Player {
+	constructor(name){
+		this.name = name;
+		this.items = [];
+		this.x = this.y = this.z = undefined;
+	}
 }
 
 // Room object
-var Room = function(x, y, z, description) {
-	this.x = x;
-	this.y = y;
-	this.z = z;
-	this.description = description;
-	this.items = [];
-	this.exits = [];
-	this.visited = false;	// Initialized as non-visited.
-	this.first_enter = function() {};
-	this.enter = function() {
+class Room {
+	constructor(x, y, z, description){
+		this.x = x;
+		this.y = y;
+		this.z = z;
+		this.description = description;
+		this.items = [];
+		this.exits = [];
+		this.visited = false;	// Initialized as non-visited.
+	}
+	first_enter() {}
+	enter() {
 		if (!this.visited)
 			this.first_enter();
 	};
 };
 
 // Item object
-var Item = function(name) {
-	this.name = name;
-	this.on = {};   // List of actions on this item
+class Item {
+	constructor(name){
+		this.name = name;
+		this.on = {};   // List of actions on this item
+	}
 };
 
 // Initializing the engine and the game state
