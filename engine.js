@@ -100,6 +100,18 @@ class Variable {
 	}
 }
 
+// Class responsible for parsing the .heritage files and creating a game state object.
+class GameConstructor {
+	constructor(name){
+
+	}
+
+	// Parsing game data and returning new Game object
+	createGame(){
+		return new Game();
+	}
+}
+
 // Initializing the engine and the game state
 $(document).ready( function() {
 
